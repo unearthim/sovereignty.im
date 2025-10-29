@@ -1,113 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sovereignty.im | The Seven Principles of Digital Sovereignty</title>
-    <!-- SEO and Social Sharing Meta Tags -->
-    <meta name="description" content="A digital monument presenting The Seven Principles of Digital Sovereignty. A constitution for a more human, authentic, and self-governed internet, unearthed by the foundry.">
+            
+    <!-- 1. Core Page Information -->
+    <title>The Seven Principles of Digital Sovereignty | sovereignty.im</title>
+    <meta name="description" content="The unearth.im Constitution, outlining the foundational principles required to own your ground and reclaim a more human, authentic, and sovereign digital life.">
+    <meta name="keywords" content="Digital Sovereignty, unearth.im Constitution, unearth.im, Digital Identity, Web3, Owned Ground, Verifiable Truth, sovereignty.im">
     <meta name="author" content="unearth.im">
-    <meta property="og:title" content="The Seven Principles of Digital Sovereignty">
-    <meta property="og:description" content="A constitution for the digital self—a declaration of the foundational principles required to own your ground and reclaim the promise of a more human, authentic, and sovereign digital life.">
+
+    <!-- 2. Open Graph (for Facebook, LinkedIn, etc.) -->
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://sovereignty.im">
-    <meta property="og:image" content="https://placehold.co/1200x630/F8F7F4/2E2E2E?text=sovereignty.im">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="The Seven Principles of Digital Sovereignty">
-    <meta name="twitter:description" content="A constitution for the digital self—a declaration of the foundational principles required to own your ground.">
-    <meta name="twitter:image" content="https://placehold.co/1200x630/F8F7F4/2E2E2E?text=sovereignty.im">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="The Seven Principles of Digital Sovereignty | sovereignty.im">
+    <meta property="og:description" content="The unearth.im Constitution, outlining the foundational principles required to own your ground and reclaim a more human, authentic, and sovereign digital life.">
+    <meta property="og:image" content="sovereignty-og-preview.png"> <!-- Updated OG Image -->
+
+    <!-- 3. Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sovereignty.im">
+    <meta property="twitter:title" content="The Seven Principles of Digital Sovereignty | sovereignty.im">
+    <meta property="twitter:description" content="The unearth.im Constitution, outlining the foundational principles required to own your ground and reclaim a more human, authentic, and sovereign digital life.">
+    <meta property="twitter:image" content="sovereignty-og-preview.png"> <!-- Updated Twitter Image -->
+
+    <!-- 4. Indexing Control -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon -->
+    <link rel="icon" href="sovereignty-favicon.svg" type="image/svg+xml"> <!-- Updated Favicon -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        /* Adhering to Brand Guide 3.0: Earth & Ink Palette */
+        :root {
+            --bg-color: #F8F7F4;       /* Earth: Light Parchment */
+            --text-color: #2E2E2E;    /* Ink: Charcoal */
+            --accent-color: #A95C3D;   /* Accent: Burnt Sienna */
+            --meta-text-color: #5A7D8C; /* Accent: Slate Blue */
+            --border-color: #D1D1D1;   /* Ink: Light Gray */
+        }
+
+        html { scroll-behavior: smooth; }
         body {
-            background-color: #F8F7F4;
-            font-family: 'Lora', serif;
-            color: #2E2E2E;
+            font-family: 'Lora', serif; /* The Manuscript font */
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
         }
-        .letter-container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 50px;
-            background-color: white;
-            border: 1px solid #E5E7EB;
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+        .container {
+            max-width: 1100px;
+            margin: 4rem auto; /* Added more top margin since the notice bar is gone */
+            padding: 0 2rem;
+            display: flex;
+            gap: 4rem;
         }
-        .font-inter {
+
+        main { flex: 3; }
+        aside { flex: 1; position: sticky; top: 4rem; height: fit-content; }
+        article { max-width: 720px; }
+
+        h1 {
+            font-family: 'Lora', serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 0.5rem;
+        }
+        
+        article h2 {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+        article h3 { 
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem; 
+            font-weight: 700;
+            border-bottom: none; 
+            margin-top: 2rem; 
+            margin-bottom: 1rem;
+        }
+
+        .subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: var(--meta-text-color);
+            margin-bottom: 3rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .intro-summary {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: var(--meta-text-color); /* Using Slate Blue for emphasis */
+            border-left: 3px solid var(--accent-color);
+            padding-left: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        p, li { font-size: 1.1rem; margin-bottom: 1.5rem; }
+        strong { font-weight: 700; color: var(--text-color); }
+        a { color: var(--accent-color); text-decoration: none; border-bottom: 1px solid var(--accent-color); transition: all 0.2s ease; }
+        a:hover { background-color: rgba(169, 92, 61, 0.1); border-bottom-color: transparent; }
+        
+        /* FIX FOR WORD WRAPPING LONG LINKS AND CODE */
+        .footnotes a, .metadata-item dd code {
+            overflow-wrap: break-word;
+            word-wrap: break-word; /* For older browser compatibility */
+        }
+
+        .signoff-footer {
+            font-family: 'Inter', sans-serif;
+            font-style: italic;
+            color: var(--meta-text-color);
+            text-align: center;
+            margin-top: 3rem;
+            font-size: 1rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+        }
+
+        .metadata-box, .series-box {
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
             font-family: 'Inter', sans-serif;
         }
-        .font-lora {
-            font-family: 'Lora', serif;
+        .series-box { margin-top: 2rem; }
+
+        .metadata-box h2, .series-box h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text-color);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 2px solid var(--text-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            margin-bottom: 1.5rem;
         }
-        h3 {
+        
+        .metadata-item { margin-bottom: 1.5rem; }
+        .metadata-item dt { font-size: 0.8rem; font-weight: 600; color: var(--meta-text-color); margin-bottom: 0.25rem; }
+        .metadata-item dd { font-size: 0.95rem; margin-left: 0; font-weight: 400; }
+        
+        .series-item { margin-bottom: 1.5rem; }
+        .series-item:last-child { margin-bottom: 0; }
+        .series-item h3 {
             font-family: 'Lora', serif;
-            font-style: italic;
-            font-size: 1.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0 0 0.25rem 0;
+            cursor: default;
+            line-height: 1.4;
+        }
+        .series-item a h3 {
+             cursor: pointer;
+        }
+        .series-item a:hover h3 {
+            color: var(--text-color);
+        }
+        .series-item a {
+            text-decoration: none;
+            border-bottom: none;
+        }
+        .series-item a:hover {
+            background-color: transparent;
+        }
+
+        .series-item p { margin: 0; } /* Remove bottom margin from paragraph inside series-item */
+        .series-meta {
+            font-size: 0.8rem !important;
+            font-weight: 600;
+            color: var(--meta-text-color);
+            text-transform: uppercase;
+        }
+
+        .series-item.current {
+            background-color: rgba(90, 125, 140, 0.05); /* a very light slate blue */
+            border-left: 3px solid var(--meta-text-color);
+            padding: 1rem;
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+        }
+        .series-item.current h3 {
+            color: var(--text-color); /* Override accent color for current item */
+        }
+        .series-cta {
+            display: block;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            margin-top: 2rem;
+            text-align: center;
+            padding: 0.75rem;
+            border: 1px solid var(--border-color);
+        }
+        .series-cta:hover {
+            background-color: var(--bg-color); /* Remove bg color change to keep it subtle */
+            border-color: var(--accent-color);
+        }
+
+        code {
+            font-family: 'Inter', sans-serif;
+            background-color: rgba(0,0,0,0.05);
+            padding: 0.2em 0.4em;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
+
+        .logo-footer {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border-color);
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 900px) {
+            .container { flex-direction: column-reverse; gap: 2rem; margin-top: 2rem; }
+            aside { position: static; top: auto; }
         }
     </style>
 </head>
 <body>
 
-    <div class="letter-container">
-        <!-- Header -->
-        <header class="text-center pb-6 mb-10 border-b border-gray-200">
-            <h1 class="font-inter text-4xl font-bold tracking-tight">unearth<span style="color: #A95C3D;">.im</span></h1>
-            <p class="font-lora text-lg italic mt-1 text-gray-600">Story, grounded.</p>
-        </header>
+    <div class="container">
+        <main>
+            <article>
+                <header>
+                    <h1>The Seven Principles of Digital Sovereignty</h1>
+                    <p class="subtitle">The unearth.im Constitution</p>
+                </header>
 
-        <!-- Body -->
-        <main class="text-base leading-relaxed">
+                <p class="intro-summary">The digital world was born of a promise: that anyone could stake a claim, build a home, and speak in their own voice. It was a promise of sovereign ground. Over time, this territory was enclosed, its homesteads replaced by walled gardens... We became tenants on land we once owned. This document is an act of remembrance and reclamation.</p>
 
-            <div class="text-center mb-12">
-                <h2 class="font-lora text-3xl font-bold tracking-tight">The Seven Principles of Digital Sovereignty</h2>
-                <p class="font-inter text-md mt-2 text-gray-500 uppercase tracking-wider">A Foundry Constitution</p>
-            </div>
-            
-            <p class="mb-6">The digital world was born of a promise: that anyone could stake a claim, build a home, and speak in their own voice. It was a promise of sovereign ground.</p>
-            <p class="mb-6">Over time, this territory was enclosed, its homesteads replaced by walled gardens, its town squares governed by unseen algorithms. We became tenants on land we once owned, our identities reshaped to fit the templates provided by our digital landlords.</p>
-            <p class="mb-6">This document is an act of remembrance and reclamation. It is a constitution for the digital self—a declaration of the foundational principles required to own your ground and reclaim the promise of a more human, authentic, and sovereign digital life.</p>
-            
-            <section>
-                <h3 class="mt-10 mb-5">1. The Principle of the Sovereign Self</h3>
-                <p class="mb-6">The bedrock of the digital world is the individual "I." This self is not a profile to be optimized, nor a data set to be harvested. It is the locus of consciousness and the final authority on its own story. No platform or protocol can own the essence of a person; it can only ever be a guest in their world. To be sovereign is to know that the declaration "I am" is the foundational and non-negotiable truth.</p>
+                <p>It is a constitution for the digital self—a declaration of the foundational principles required to own your ground and reclaim the promise of a more human, authentic, and sovereign digital life.</p>
 
-                <h3 class="mt-10 mb-5">2. The Principle of Owned Ground</h3>
-                <p class="mb-6">An identity cannot be sovereign without its own territory. A rented space, subject to the whims of a landlord, is a stage for performance, not a home for an identity. True sovereignty requires owning your digital ground—a permanent, independently controlled landmark where your story can be built, your community can gather, and your work can endure, safe from the shifting sands of platforms.</p>
+                <h2>1. The Principle of the Sovereign Self</h2>
+                <p>The bedrock of the digital world is the individual "I." This self is not a profile to be optimized, nor a data set to be harvested. It is the locus of consciousness and the final authority on its own story. No platform or protocol can own the essence of a person; it can only ever be a guest in their world. To be sovereign is to know that the declaration "I am" is the foundational and non-negotiable truth.</p>
 
-                <h3 class="mt-10 mb-5">3. The Principle of Authentic Declaration</h3>
-                <p class="mb-6">To be sovereign is to write your own story. Every individual possesses the fundamental need to define and express themselves on their own terms, free from the flattening effect of templated profiles and algorithmic categorization. The narrative of the self is the ultimate creative work; it must not be confined to a series of pre-approved fields and tags.</p>
+                <h2>2. The Principle of Owned Ground</h2>
+                <p>An identity cannot be sovereign without its own territory. A rented space, subject to the whims of a landlord, is a stage for performance, not a home for an identity. True sovereignty requires owning your digital ground—a permanent, independently controlled landmark where your story can be built, your community can gather, and your work can endure, safe from the shifting sands of platforms.</p>
 
-                <h3 class="mt-10 mb-5">4. The Principle of Intentional Connection</h3>
-                <p class="mb-6">Connection, to be meaningful, must be a conscious choice. A sovereign self builds communities not through passive accumulation or algorithmic suggestion, but through deliberate acts of reaching out and inviting in. The health of a digital society is measured by the quality of its conversations, and true conversation requires the freedom to connect—and disconnect—based on shared values and mutual consent.</p>
+                <h2>3. The Principle of Authentic Declaration</h2>
+                <p>To be sovereign is to write your own story. Every individual possesses the fundamental need to define and express themselves on their own terms, free from the flattening effect of templated profiles and algorithmic categorization. The narrative of the self is the ultimate creative work; it must not be confined to a series of pre-approved fields and tags.</p>
 
-                <h3 class="mt-10 mb-5">5. The Principle of Verifiable Truth</h3>
-                <p class="mb-6">In a world increasingly saturated with synthetic media, the ability to prove one's humanity is a foundational act of sovereignty. Every individual must have access to tools that allow for the clear, cryptographic verification of their identity and the provenance of their work. This is not about surveillance; it is about empowerment—the power to draw a clear line between the authentic and the artificial, and to build a new economy based on verifiable trust.</p>
+                <h2>4. The Principle of Intentional Connection</h2>
+                <p>Connection, to be meaningful, must be a conscious choice. A sovereign self builds communities not through passive accumulation or algorithmic suggestion, but through deliberate acts of reaching out and inviting in. The health of a digital society is measured by the quality of its conversations, and true conversation requires the freedom to connect—and disconnect—based on shared values and mutual consent.</p>
 
-                <h3 class="mt-10 mb-5">6. The Principle of Conscious Agency</h3>
-                <p class="mb-6">The sovereign individual is the agent of their own experience, not an asset to be exploited. This requires conscious control over the data and attention that constitutes one's digital life. It is the power to understand how one's story is being used by others, the freedom to revoke access, and the ability to engage with the digital world without submitting to an architecture of pervasive surveillance.</p>
+                <h2>5. The Principle of Verifiable Truth</h2>
+                <p>In a world increasingly saturated with synthetic media, the ability to prove one's humanity is a foundational act of sovereignty. Every individual must have access to tools that allow for the clear, cryptographic verification of their identity and the provenance of their work. This is not about surveillance; it is about empowerment—the power to draw a clear line between the authentic and the artificial, and to build a new economy based on verifiable trust.</p>
 
-                <h3 class="mt-10 mb-5">7. The Principle of Graceful Separation</h3>
-                <p class="mb-6">The right to connect has no meaning without the right to disconnect. A healthy community, like a healthy self, requires boundaries. The sovereign individual has the power to curate their own world, which includes the quiet, dignified, and necessary act of severance. A truly human-centric web must honor the graceful exit as much as it celebrates the enthusiastic welcome.</p>
-            </section>
-            
-            <div class="mt-10 pt-10 border-t border-gray-200">
-                <p class="mb-6">These principles are not rules to be obeyed, but tools to be wielded. They are the compass and the spade for a new generation of digital archaeologists, builders, and community weavers. They are a reminder that the architecture of our digital world is not inevitable; it is a choice we make with every line of code we write, every platform we adopt, and every community we cultivate.</p>
-                <p class="mb-6">This constitution, therefore, is an invitation to all who believe in a more thoughtful internet. It is a call to build with intention, to connect with purpose, and to create landmarks that honor the sovereignty of the self. The future is not a place we discover, but a place we build together, on ground we own. Let us begin the work of unearthing it.</p>
-            </div>
-            
-            <!-- Footer -->
-            <footer class="mt-12 pt-6 border-t border-gray-200 text-center">
-                <p class="font-inter text-sm text-gray-500">A Digital Monument by <a href="https://unearth.im" class="font-semibold text-gray-600 hover:text-black">unearth.im</a></p>
-            </footer>
+                <h2>6. The Principle of Conscious Agency</h2>
+                <p>The sovereign individual is the agent of their own experience, not an asset to be exploited. This requires conscious control over the data and attention that constitutes one's digital life. It is the power to understand how one's story is being used by others, the freedom to revoke access, and the ability to engage with the digital world without submitting to an architecture of pervasive surveillance.</p>
 
+                <h2>7. The Principle of Graceful Separation</h2>
+                <p>The right to connect has no meaning without the right to disconnect. A healthy community, like a healthy self, requires boundaries. The sovereign individual has the power to curate their own world, which includes the quiet, dignified, and necessary act of severance. A truly human-centric web must honor the graceful exit as much as it celebrates the enthusiastic welcome.</p>
+
+                <h2>Conclusion: An Invitation to Build</h2>
+                <p>These principles are not rules to be obeyed, but tools to be wielded. They are the compass and the spade for a new generation of digital archaeologists, builders, and community weavers. They are a reminder that the architecture of our digital world is not inevitable; it is a choice we make with every line of code we write, every platform we adopt, and every community we cultivate.</p>
+                <p>This constitution, therefore, is an invitation to all who believe in a more thoughtful internet. It is a call to build with intention, to connect with purpose, and to create landmarks that honor the sovereignty of the self. The future is not a place we discover, but a place we build together, on ground we own. Let us begin the work of unearthing it.</p>
+                
+                <p class="signoff-footer">
+                    A Digital Monument by <strong>unearth.im</strong>
+                </p>
+            </article>
         </main>
-    </div>
+        <aside>
+            <div class="metadata-box">
+                <h2>Document Details</h2>
+                <div class="metadata-item">
+                    <dt>Category</dt>
+                    <dd>The unearth.im Constitution</dd>
+                </div>
+                <div class="metadata-item">
+                    <dt>Core Concepts</dt>
+                    <dd><code>Digital Sovereignty</code><br><code>Owned Ground</code><br><code>Verifiable Truth</code></dd>
+                </div>
+                <div class="metadata-item">
+                    <dt>Domain Artifact</dt>
+                    <dd><code>sovereignty.im</code></dd>
+                </div>
+                <div class="metadata-item">
+                    <dt>Date Published</dt>
+                    <dd>October 29, 2025</dd>
+                </div>
+                <div class="logo-footer">
+                    <a href="https://unearth.im/" target="_blank" rel="noopener noreferrer" style="border-bottom: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 60" width="120">
+                            <text x="50%" y="50%" font-family="'Inter', sans-serif" font-size="50" font-weight="600" text-anchor="middle" dominant-baseline="middle">
+                                <tspan fill="#2E2E2E">unearth</tspan><tspan fill="#A95C3D">.im</tspan>
+                            </text>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="series-box">
+                <h2>Core Philosophy Series</h2>
+                                    
+                <div class="series-item current">
+                    <h3>1. The Seven Principles of Digital Sovereignty</h3>
+                    <p class="series-meta">You are here</p>
+                </div>
 
+                <div class="series-item">
+                    <a href="https://soulbound.im" target="_blank" rel="noopener noreferrer">
+                        <h3>2. Digital Provenance: A Thesis</h3>
+                        <p class="series-meta">Cornerstone Thesis</p>
+                    </a>
+                </div>
+
+                <div class="series-item">
+                     <a href="https://unearth.im/fieldnotes/post/authenticateim-the-gravity-of-certainty" target="_blank" rel="noopener noreferrer">
+                        <h3>3. The Gravity of Certainty</h3>
+                        <p class="series-meta">Field Note on authenticate.im</p>
+                    </a>
+                </div>
+
+                <a href="https://unearth.im/museum/" target="_blank" rel="noopener noreferrer" class="series-cta">Explore the Full Museum &rarr;</a>
+            </div>
+
+        </aside>
+    </div>
 </body>
 </html>
-
 
